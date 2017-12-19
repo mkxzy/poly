@@ -9,7 +9,8 @@ public class PolyCaculator {
 
     public Integer eval(String expression){
 
-        CharStream input = new ANTLRInputStream(expression);com.iblotus.aurora.PolyLexer lexer = new com.iblotus.aurora.PolyLexer(input);
+        CharStream input = new ANTLRInputStream(expression);
+        com.iblotus.aurora.PolyLexer lexer = new com.iblotus.aurora.PolyLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         com.iblotus.aurora.PolyParser parser = new com.iblotus.aurora.PolyParser(tokens);
         ParseTree tree = parser.expr();
