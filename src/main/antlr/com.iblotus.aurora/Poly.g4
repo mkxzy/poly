@@ -28,8 +28,8 @@
 
 grammar Poly;
 
-expr: expr ('*'|'/') expr //先找加和减去
-| expr ('+'|'-') expr
+expr: expr ('*'|'/') expr //乘除
+| expr ('+'|'-') expr //加减
 | NUM
 ;
 NUM: [0-9]+;
